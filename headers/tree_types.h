@@ -25,15 +25,9 @@ enum funcs
     LOG
 };
 
-union const_node
-{
-    double mdouble = 0;
-    int    mint       ;
-};
-
 union calc_node_data
 {
-    const_node cnst = {};
+    double cnst = {};
     int        var ;
     int        func;
 };
